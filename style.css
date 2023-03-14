@@ -153,20 +153,16 @@ a:hover{
 /*---------------banner--------------*/
 
 #banner {
+  position: sticky;
   background-color: white;
-  padding: 50px 25px 25px 25px;
-  justify-content: center;
+  padding: 25px 25px 25px 10px;
 }
 
 
-.claim{
-  font-size: 32px;
-}
-
-hr{
-  border: 0;
-  border-top: 1px solid black;
-  opacity: 1;
+.menu{
+  font-family: "EB Garamond", Regular;
+  font-size: 17px;
+  line-height: 0px;
 }
 
 /*---------------project--------------*/
