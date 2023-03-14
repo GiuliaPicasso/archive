@@ -1,0 +1,362 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Neue Haas Grotesk Display Pro', 55 Roman;
+}
+
+a{
+  text-decoration: underline;
+  font-style: italic;
+  color: #34CB3E;
+  cursor: pointer;
+}
+
+a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x)*-.5);
+  margin-right: calc(var(--bs-gutter-x)*-.5);
+  margin-top: calc(var(--bs-gutter-y)*-1);
+
+}
+
+.row-project{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x)*-.5);
+  margin-right: calc(var(--bs-gutter-x)*-.5);
+  margin-top: calc(var(--bs-gutter-y)*-1);
+}
+
+.container{
+  padding: 10px;
+}
+
+/*---------------font-section--------------*/
+
+
+@font-face {
+  font-family: 'Fivo Sans Modern Regular';
+  src: url('font/FivoSansModern-Regular.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern Medium';
+  src: url('font/FivoSansModern-Medium.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern Bold';
+  src: url('font/FivoSansModern-Bold.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern Heavy';
+  src: url('font/FivoSansModern-Heavy.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('font/Poppins-SemiBold.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpaceMono Regular';
+  src: url('font/SpaceMono-Regular.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+/*---------------scroller-section--------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  outline: 1px solid black;
+  background-size: 40px;
+  border-radius: 10px;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+}
+
+
+/*---------------navbar--------------*/
+
+#nav{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.navbar{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-bar{
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand{
+  font-family: 'Neue Haas Grotesk Display Pro', 65 Medium;
+  font-size: 20px;
+}
+
+
+/*---------------banner--------------*/
+
+#banner {
+  background-color: white;
+  padding: 50px 25px 25px 25px;
+  justify-content: center;
+}
+
+
+.claim{
+  font-size: 32px;
+}
+
+hr{
+  border: 0;
+  border-top: 1px solid black;
+  opacity: 1;
+}
+
+/*---------------project--------------*/
+
+#projects {
+  background-color: white;
+  padding: 50px 25px 50px 25px;
+  justify-content: center;
+}
+
+.project{
+  position: relative;
+  height: 90%;
+  width: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project-image{
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.project:hover .overlay{
+  opacity: 1;
+}
+
+.project:hover .project-image{
+  filter: none;
+}
+
+.project-text{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/*---------------footer--------------*/
+
+#footer{
+  background-color: white;
+  padding: 15px 25px 0px 25px;
+  outline: 1px solid black;
+  font-size: 18px;
+}
+
+.footer{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+}
+
+.footer-link{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/*---------------aboutme--------------*/
+
+#aboutme{
+  background-color: white;
+  padding: 50px 25px 25px 25px;
+}
+
+.bio{
+  font-size: 28px;
+  font-family: 'Fivo Sans Modern Regular';
+}
+
+
+#cv{
+  background-color: white;
+  padding: 25px 25px 0px 25px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+
+/*---------------profile--------------*/
+
+#cover{
+  background-size: 100vw;
+  padding: 50px 0px 50px 0px;
+  background: white;
+}
+
+marquee{
+  font-family: 'SpaceMono Regular';
+  font-size: 16px;
+}
+
+#info{
+  padding: 50px 0px 50px 0px;
+  background: #ffffff;
+}
+
+.specs{
+  font-size: 18px;
+}
+
+.sub{
+  font-family: 'Fivo Sans Modern Regular';
+  font-size: 20px;
+}
+
+.fact{
+  font-family: 'SpaceMono Regular';
+  font-size: 14px;
+}
+
+#info img{
+  width: 80vw;
+}
+
+#myCarousel{
+ width: 100%;
+}
+
+.foto{
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+
+
+
+/*---------------mobile--------------*/
+
+@media screen and (max-width:767px) {
+
+  .navbar-brand{
+    font-family: 'Poppins SemiBold';
+    font-size: 30px;
+  }
+
+  .asterisco{
+    width: 40px;
+  }
+
+  .claim{
+    font-size: 24px;
+  }
+
+  .bio{
+    font-size: 24px;
+  }
+
+  .sub{
+    font-family: 'Fivo Sans Modern Regular';
+    font-size: 16px;
+  }
+
+  .specs{
+    font-size: 14px;
+  }
+
+  #footer{
+    font-size: 14px;
+  }
+
+  .row-project{
+    flex-direction:column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+
+}
