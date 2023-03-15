@@ -16,6 +16,7 @@ a:hover{
   text-decoration: underline;
 }
 
+
 ul{
   list-style-type: none;
 }
@@ -54,24 +55,23 @@ ul{
 
 /*---------------font-section--------------*/
 
-
 @font-face {
-  font-family: 'Fivo Sans Modern Regular';
-  src: url('font/FivoSansModern-Regular.otf') format('woff2');
+  font-family: 'Neue Haas Grotesk Display Pro Regular';
+  src: url('font/NHaasGroteskTXPro-55Rg.ttf') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Fivo Sans Modern Medium';
-  src: url('font/FivoSansModern-Medium.otf') format('woff2');
+  font-family: 'Neue Haas Grotesk Display Pro Medium';
+  src: url('font/NHaasGroteskTXPro-65Md.ttf') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Fivo Sans Modern Bold';
-  src: url('font/FivoSansModern-Bold.otf') format('woff2');
+  font-family: 'Neue Haas Grotesk Display Pro Bold';
+  src: url('font/NHaasGroteskTXPro-75Bd.ttf') format('woff2');
   font-style: normal;
   font-display: swap;
 }
@@ -105,8 +105,6 @@ ul{
   top: 0;
   z-index: 100;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
 }
 
 .navbar{
@@ -136,10 +134,33 @@ ul{
 }
 
 .menu{
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
   font-family: "EB Garamond", Regular;
   font-size: 17px;
-  vertical-align: middle;
   padding-left: 10px;
+  top: 40vh;
+}
+
+.link{
+  font-style: italic;
+  color: #34CB3E;
+  text-decoration: underline;
+}
+
+.footer{
+  position: fixed;
+  z-index: 100;
+  font-family: "EB Garamond", Regular;
+  font-size: 17px;
+  padding-left: 10px;
+  bottom: 2vh;
+}
+
+.footer-link{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 
@@ -154,29 +175,27 @@ ul{
 
 .project-image{
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
   filter: grayscale(100%);
 }
 
-.project:hover .overlay{
-  opacity: 1;
-}
 
 .project:hover .project-image{
   filter: none;
 }
 
 .title{
-  font-size: 20px;
+  font-size: 17px;
   text-align: left;
   margin-top: 20px;
 }
 
 .text{
-  font-family: 'Neue Haas Grotesk Display Pro', normal;
-  font-size: 16px;
+  font-family: 'Neue Haas Grotesk Display Pro Regular';
+  font-size: 14px;
   text-align: left;
+  width: 50%;
   margin-top: 20px;
 }
 
@@ -184,22 +203,11 @@ ul{
 /*---------------footer--------------*/
 
 #footer{
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
   background-color: white;
   padding: 15px 10px 0px 10px;
-}
-
-.footer{
-  font-family: "EB Garamond", Regular;
-  font-size: 17px;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: self-start;
-}
-
-.footer-link{
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 
