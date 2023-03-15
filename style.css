@@ -126,7 +126,7 @@ ul{
 .navbar-brand{
   position: fixed;
   top: 1vh;
-  font-family: 'Neue Haas Grotesk Display Pro Medium';
+  font-family: 'Neue Haas Grotesk Display Pro Bold';
   font-size: 20px;
 }
 
@@ -190,10 +190,14 @@ ul{
   filter: none;
 }
 
+#myCarousel{
+ width: 100%;
+}
+
 .title{
   font-size: 17px;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .text{
@@ -206,8 +210,8 @@ ul{
 .text-bio{
   font-size: 14px;
   text-align: left;
-  width: 60%;
-  margin-top: 20px;
+  width: 70%;
+  margin-top: 40px;
   display: inline-flex;
   align-items: flex-start;
 }
@@ -265,11 +269,6 @@ marquee{
  width: 100%;
 }
 
-.foto{
-  width: 70%;
-  margin: auto;
-  display: block;
-}
 
 
 
