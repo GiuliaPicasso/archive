@@ -16,6 +16,11 @@ a:hover{
   text-decoration: underline;
 }
 
+ul{
+  list-style-type: none;
+}
+
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -93,33 +98,6 @@ a:hover{
   font-display: swap;
 }
 
-/*---------------scroller-section--------------*/
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 20px;
-  cursor: pointer;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-  cursor: pointer;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: white;
-  outline: 1px solid black;
-  background-size: 40px;
-  border-radius: 10px;
-  background-position: center;
-  display: block;
-  cursor: pointer;
-}
-
-
 /*---------------navbar--------------*/
 
 #nav{
@@ -152,34 +130,26 @@ a:hover{
 
 /*---------------banner--------------*/
 
-#banner {
-  position: sticky;
+#content {
   background-color: white;
-  padding: 0px 0px 0px 10px;
+  justify-content: left;
 }
-
 
 .menu{
   font-family: "EB Garamond", Regular;
   font-size: 17px;
-  line-height: 0px;
   vertical-align: middle;
+  padding-left: 10px;
 }
+
 
 /*---------------project--------------*/
 
-#projects {
-  background-color: white;
-  padding: 50px 25px 50px 25px;
-  justify-content: center;
-}
-
 .project{
   position: relative;
-  height: 90%;
+  height: 100%;
   width: auto;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .project-image{
@@ -187,14 +157,6 @@ a:hover{
   width: 100%;
   height: auto;
   filter: grayscale(100%);
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: white;
-  cursor: pointer;
 }
 
 .project:hover .overlay{
@@ -205,11 +167,16 @@ a:hover{
   filter: none;
 }
 
-.project-text{
-  color: black;
+.title{
   font-size: 20px;
-  text-align: center;
-  cursor: pointer;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.text{
+  font-family: 'Neue Haas Grotesk Display Pro', normal;
+  font-size: 16px;
+  text-align: left;
   margin-top: 20px;
 }
 
@@ -218,12 +185,12 @@ a:hover{
 
 #footer{
   background-color: white;
-  padding: 15px 25px 0px 25px;
-  outline: 1px solid black;
-  font-size: 18px;
+  padding: 15px 10px 0px 10px;
 }
 
 .footer{
+  font-family: "EB Garamond", Regular;
+  font-size: 17px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -231,37 +198,8 @@ a:hover{
 }
 
 .footer-link{
-  color: black;
   text-decoration: underline;
   cursor: pointer;
-}
-
-
-/*---------------aboutme--------------*/
-
-#aboutme{
-  background-color: white;
-  padding: 50px 25px 25px 25px;
-}
-
-.bio{
-  font-size: 28px;
-  font-family: 'Fivo Sans Modern Regular';
-}
-
-
-#cv{
-  background-color: white;
-  padding: 25px 25px 0px 25px;
-}
-
-ul{
-  list-style-type: none;
-}
-
-li{
-  margin-bottom: 40px;
-  margin-top: 20px;
 }
 
 
