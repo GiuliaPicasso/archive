@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Neue Haas Grotesk Display Pro Regular';
+  font-family: 'Neue Haas Grotesk Display Pro';
 }
 
 a{
@@ -58,48 +58,7 @@ ul{
 
 /*---------------font-section--------------*/
 
-@font-face {
-  font-family: 'Neue Haas Grotesk Display Pro Regular';
-  src: url('font/NHaasGroteskTXPro-55Rg.ttf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neue Haas Grotesk Display Pro Medium';
-  src: url('font/NHaasGroteskTXPro-65Md.ttf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neue Haas Grotesk Display Pro Bold';
-  src: url('font/NHaasGroteskTXPro-75Bd.ttf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Fivo Sans Modern Heavy';
-  src: url('font/FivoSansModern-Heavy.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'Poppins SemiBold';
-  src: url('font/Poppins-SemiBold.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SpaceMono Regular';
-  src: url('font/SpaceMono-Regular.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
 /*---------------navbar--------------*/
 
@@ -126,8 +85,7 @@ ul{
 .navbar-brand{
   position: fixed;
   top: 1vh;
-  font-family: 'Neue Haas Grotesk Display Pro Bold';
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -216,6 +174,9 @@ ul{
   align-items: flex-start;
 }
 
+.works{
+  padding-bottom: 90px;
+}
 
 
 /*---------------footer--------------*/
