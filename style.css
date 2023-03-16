@@ -103,7 +103,7 @@ ul{
   position: fixed;
   z-index: 100;
   overflow: hidden;
-  font-size: 17px;
+  font-size: 16px;
   padding-left: 10px;
   top: 40vh;
 }
@@ -116,10 +116,9 @@ ul{
 
 .footer{
   position: fixed;
-  z-index: 100;
   font-family: 'EB Garamond';
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   padding-left: 10px;
   bottom: 2vh;
 }
@@ -127,6 +126,10 @@ ul{
 .footer-link{
   text-decoration: underline;
   cursor: pointer;
+}
+
+.col-8{
+  padding-right: 10%;
 }
 
 
@@ -177,6 +180,10 @@ ul{
   align-items: flex-start;
 }
 
+.biography{
+  margin-right: 60px;
+}
+
 .works{
   padding-bottom: 90px;
 }
@@ -186,41 +193,70 @@ ul{
 
 @media screen and (max-width:767px) {
 
+  .col-4{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col-8{
+    width: 100%;
+    padding-left: 10%;
+    overflow-x: hidden;
+  }
+
+  #nav{
+    position: absolute;
+  }
+
   .navbar-brand{
-    font-family: 'Poppins SemiBold';
     font-size: 18px;
   }
 
-  .asterisco{
-    width: 40px;
+  .menu{
+    font-size: 15px;
+    position: relative;
+    top: 0;
+    margin-top: 40px;
+    z-index: 100;
   }
 
-  .claim{
-    font-size: 24px;
+  .footer{
+    font-size: 15px;
+    text-align: right;
+    position: relative;
+    right: 0;
+    margin-top: 70px;
   }
 
-  .bio{
-    font-size: 24px;
+  .text{
+    width: 100%;
   }
 
-  .sub{
-    font-family: 'Fivo Sans Modern Regular';
-    font-size: 16px;
+  .text-bio{
+    flex-direction: column;
+    width: 100%;
   }
 
-  .specs{
-    font-size: 14px;
+  .biography{
+    margin-right: 0px;
   }
 
-  #footer{
-    font-size: 14px;
+  .project{
+    flex-direction: column;
   }
 
-  .row-project{
-    flex-direction:column;
-    margin-left: 10px;
-    margin-right: 10px;
+  .project-image{
+    display: block;
+    width: 100%;
   }
+
+  .carousel-control-next{
+    padding-left: 70%;
+    right: 0;
+  }
+
 
 
 
