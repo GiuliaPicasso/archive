@@ -5,7 +5,8 @@
 }
 
 a{
-  font-family: "EB Garamond", Regular;
+  font-family: 'EB Garamond';
+  font-weight: 400;
   text-decoration: underline;
   color: black;
   cursor: pointer;
@@ -97,10 +98,11 @@ ul{
 }
 
 .menu{
+  font-family: 'EB Garamond';
+  font-weight: 400;
   position: fixed;
   z-index: 100;
   overflow: hidden;
-  font-family: "EB Garamond", Regular;
   font-size: 17px;
   padding-left: 10px;
   top: 40vh;
@@ -115,7 +117,8 @@ ul{
 .footer{
   position: fixed;
   z-index: 100;
-  font-family: "EB Garamond", Regular;
+  font-family: 'EB Garamond';
+  font-weight: 400;
   font-size: 17px;
   padding-left: 10px;
   bottom: 2vh;
@@ -177,61 +180,6 @@ ul{
 .works{
   padding-bottom: 90px;
 }
-
-
-/*---------------footer--------------*/
-
-#footer{
-  position: fixed;
-  z-index: 100;
-  overflow: hidden;
-  background-color: white;
-  padding: 15px 10px 0px 10px;
-}
-
-
-/*---------------profile--------------*/
-
-#cover{
-  background-size: 100vw;
-  padding: 50px 0px 50px 0px;
-  background: white;
-}
-
-marquee{
-  font-family: 'SpaceMono Regular';
-  font-size: 16px;
-}
-
-#info{
-  padding: 50px 0px 50px 0px;
-  background: #ffffff;
-}
-
-.specs{
-  font-size: 18px;
-}
-
-.sub{
-  font-family: 'Fivo Sans Modern Regular';
-  font-size: 20px;
-}
-
-.fact{
-  font-family: 'SpaceMono Regular';
-  font-size: 14px;
-}
-
-#info img{
-  width: 80vw;
-}
-
-#myCarousel{
- width: 100%;
-}
-
-
-
 
 
 /*---------------mobile--------------*/
