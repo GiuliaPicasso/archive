@@ -208,6 +208,7 @@ ul{
 
   #nav{
     position: absolute;
+    width: 100vw;
   }
 
   .navbar-brand{
