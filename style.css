@@ -251,11 +251,15 @@ ul{
   .project-image{
     display: block;
     width: 100%;
+    filter: none;
   }
 
-  .carousel-control-next{
-    padding-left: 70%;
-    right: 0;
+  .carousel-control-next, .carousel-control-prev{
+    width: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-right: -10px;
+    margin-left: -10px;
   }
 
 
