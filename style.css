@@ -148,6 +148,7 @@ ul{
   width: 90%;
   height: auto;
   filter: grayscale(100%);
+  z-index: 100;
 }
 
 .project-image:hover{
@@ -156,6 +157,10 @@ ul{
 
 #myCarousel{
  width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  z-index: 10;
 }
 
 .title{
