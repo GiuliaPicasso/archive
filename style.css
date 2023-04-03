@@ -59,14 +59,27 @@ ul{
 
 /*---------------font-section--------------*/
 
-@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
-
 @font-face {
   font-family: 'Neue Haas Grotesk Text Pro';
   src: url('font/NHaasGroteskTXPro-55Rg.ttf');
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Text Pro Medium';
+  src: url('font/NHaasGroteskTXPro-65Md.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Text Pro Bold';
+  src: url('font/NHaasGroteskTXPro-75Bd.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 
@@ -93,6 +106,7 @@ ul{
 }
 
 .navbar-brand{
+  font-family: 'Neue Haas Grotesk Text Pro Bold';
   position: fixed;
   top: 1vh;
   font-size: 18px;
@@ -173,6 +187,7 @@ ul{
 }
 
 .title{
+  font-family: 'Neue Haas Grotesk Text Pro Bold';
   font-size: 17px;
   text-align: left;
   margin-top: 40px;
