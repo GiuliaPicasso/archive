@@ -163,6 +163,15 @@ ul{
   z-index: 10;
 }
 
+.carousel-control-prev{
+  margin-right: 100%;
+  left: -15%;
+}
+
+.carousel-control-next{
+  right: -5%;
+}
+
 .title{
   font-family: 'Neue Haas Grotesk Text Pro Bold';
   font-size: 17px;
@@ -218,6 +227,7 @@ ul{
   }
 
   .navbar-brand{
+    position: relative;
     font-size: 18px;
   }
 
@@ -264,8 +274,8 @@ ul{
     width: 0;
     display: flex;
     justify-content: space-around;
-    margin-right: -10px;
-    margin-left: -10px;
+    margin-right: 0%;
+    margin-left: 10%;
   }
 
 
