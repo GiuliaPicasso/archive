@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Yantramanav';
 }
 
 a{
@@ -58,6 +58,7 @@ ul{
 
 /*---------------font-section--------------*/
 
+@import url('https://fonts.cdnfonts.com/css/yantramanav');
 
 /*---------------navbar--------------*/
 
@@ -82,10 +83,10 @@ ul{
 }
 
 .navbar-brand{
-  font-family: 'Neue Haas Grotesk Text Pro Bold';
+  font-family: 'Yantramanav';
   position: fixed;
   top: 1vh;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -173,21 +174,21 @@ ul{
 
 
 .title{
-  font-family: 'Neue Haas Grotesk Text Pro Bold';
-  font-size: 17px;
+  font-family: 'Yantramanav';
+  font-size: 18px;
   text-align: left;
   margin-top: 40px;
 }
 
 .text{
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   width: 50%;
   margin-top: 20px;
 }
 
 .text-bio{
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   width: 70%;
   margin-top: 40px;
