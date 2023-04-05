@@ -254,8 +254,8 @@
                     </div>
 
                     <div class="carousel-item">
-                      <video id="video1" class="project-image" style="filter: none;" controls muted onclick="playpaused()"><source src="images/video.mp4" type="video/mp4"></video>
-                        <div id="playpause_img" onclick="playpaused()"></div>
+                      <video muted id="video1" class="project-image" style="filter: none;" onclick="playpaused()"><source src="images/video.mp4" type="video/mp4"></video>
+                        <div id="playpause_img" onclick="playpause()"></div>
                     </div>
 
                   </div>
@@ -434,8 +434,22 @@
     <script>
      AOS.init();
     </script>
-    <script src="script.js"></script>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript">
+    var myvideo = document.getElementById("video1")
+    function playpause(){
+      if(myvideo.paused){
+        myvideo.play();
+        document.getElementById("playpause_img").style.backgroundImage = "none";
+      }
+      else {
+        myvideo.pause();
+        document.getElementById("playpause_img").style.backgroundImage = "url('images/playbtn.svg')";
+      }
+    }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
