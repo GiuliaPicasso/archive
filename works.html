@@ -103,7 +103,7 @@
               </div>
 
               <div class="works">
-                <div id="myCarousel6" class="carousel slide" data-bs-ride="carousel">
+                <div id="myCarousel6" class="carousel slide" data-interval="false">
 
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -111,7 +111,8 @@
                     </div>
 
                     <div class="carousel-item">
-                      <video class="project-image" style="filter: none;" controls><source src="images/video2.mp4" type="video/mp4"></video>
+                      <video muted id="video1" class="project-image" style="filter: none;" onclick="playpaused()"><source src="images/video2.mp4" type="video/mp4"></video>
+                        <div id="playpause_img" onclick="playpause()"></div>
                     </div>
 
                   </div>
@@ -180,7 +181,7 @@
 
 
               <div class="works">
-                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="myCarousel" class="carousel slide" data-interval="false">
 
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -210,7 +211,7 @@
               </div>
 
               <div class="works">
-                <div id="myCarousel3" class="carousel slide" data-bs-ride="carousel">
+                <div id="myCarousel3" class="carousel slide" data-interval="false">
 
                   <div class="carousel-inner">
 
@@ -241,7 +242,7 @@
               </div>
 
               <div class="works">
-                <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                <div id="myCarousel2" class="carousel slide" data-interval="false">
 
                   <div class="carousel-inner">
 
@@ -254,7 +255,7 @@
                     </div>
 
                     <div class="carousel-item">
-                      <video muted id="video1" class="project-image" style="filter: none;" onclick="playpaused()"><source src="images/video.mp4" type="video/mp4"></video>
+                      <video muted id="video2" class="project-image" style="filter: none;" onclick="playpaused()"><source src="images/video.mp4" type="video/mp4"></video>
                         <div id="playpause_img" onclick="playpause()"></div>
                     </div>
 
@@ -277,7 +278,7 @@
               </div>
 
               <div class="works">
-                <div id="myCarousel5" class="carousel slide" data-bs-ride="carousel">
+                <div id="myCarousel5" class="carousel slide" data-interval="false">
 
                   <div class="carousel-inner">
 
@@ -286,7 +287,8 @@
                     </div>
 
                     <div class="carousel-item">
-                      <video class="project-image" style="filter: none;" controls><source src="images/autonomiavideo.mp4" type="video/mp4"></video>
+                      <video muted id="video3" class="project-image" style="filter: none;" onclick="playpaused()"><source src="images/autonomiavideo.mp4" type="video/mp4"></video>
+                        <div id="playpause_img" onclick="playpause()"></div>
                     </div>
 
                   </div>
@@ -309,7 +311,7 @@
 
 
               <div class="works">
-                <div id="myCarousel4" class="carousel slide" data-bs-ride="carousel">
+                <div id="myCarousel4" class="carousel slide" data-interval="false">
 
                   <div class="carousel-inner">
 
@@ -438,7 +440,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <script type="text/javascript">
-    var myvideo = document.getElementById("video1")
+    var myvideo = document.querySelectorAll("#video1, #video2, #video3");
     function playpause(){
       if(myvideo.paused){
         myvideo.play();
@@ -449,6 +451,7 @@
         document.getElementById("playpause_img").style.backgroundImage = "url('images/playbtn.svg')";
       }
     }
+
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
