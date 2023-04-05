@@ -18,7 +18,6 @@ a:hover{
   text-decoration: underline;
 }
 
-
 ul{
   list-style-type: none;
   margin: 0;
@@ -172,6 +171,7 @@ ul{
   right: -5%;
 }
 
+
 .title{
   font-family: 'Neue Haas Grotesk Text Pro Bold';
   font-size: 17px;
@@ -201,6 +201,23 @@ ul{
 
 .works{
   padding-bottom: 90px;
+}
+
+.videowidth {
+  position: relative;
+}
+
+#playpause_img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 
