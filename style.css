@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Yantramanav';
+  font-weight: 300;
 }
 
 a{
@@ -175,6 +176,7 @@ ul{
 
 .title{
   font-family: 'Yantramanav';
+  font-weight: 400;
   font-size: 18px;
   text-align: left;
   margin-top: 40px;
@@ -244,7 +246,7 @@ ul{
 
   .navbar-brand{
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .menu{
