@@ -440,7 +440,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <script type="text/javascript">
-    var myvideo = document.querySelectorAll("#video1, #video2, #video3");
+    var myvideo = document.getElementById("video1")
     function playpause(){
       if(myvideo.paused){
         myvideo.play();
@@ -451,6 +451,7 @@
         document.getElementById("playpause_img").style.backgroundImage = "url('images/playbtn.svg')";
       }
     }
+
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
