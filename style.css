@@ -239,6 +239,10 @@ ul{
     overflow-x: hidden;
   }
 
+  p{
+    width: 80vw;
+  }
+
   #nav{
     position: absolute;
     width: 100vw;
